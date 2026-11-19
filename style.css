@@ -1,0 +1,286 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: white;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+
+header {
+    background: #080808;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #d71920;
+}
+
+header h1 {
+    color: #e3262e;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #aaa;
+    margin: 10px;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #e3262e;
+}
+
+/* BOTÕES */
+
+button {
+    background: #c91e26;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ed343b;
+}
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #191919;
+    padding: 40px;
+    margin: 25px 0;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* INÍCIO */
+
+#inicio {
+    min-height: 400px;
+    background:
+        linear-gradient(90deg, #101010, #101010aa),
+        url("WALLPAPER VEHICLE.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio h2 {
+    font-size: 36px;
+}
+
+#inicio p {
+    margin: 15px 0;
+}
+
+#inicio img {
+    display: none;
+}
+
+#inicio a {
+    display: inline-block;
+    background: #c91e26;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/* VEÍCULOS */
+
+#veiculos {
+    text-align: center;
+}
+
+#veiculos article {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    min-width: 250px;
+    background: #222;
+    padding: 18px;
+    margin: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+#veiculos article img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin: 12px 0;
+}
+
+#veiculos article p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+#veiculos article strong {
+    color: #ff454b;
+}
+
+#veiculos article hr {
+    display: none;
+}
+
+/* SOBRE */
+
+#sobre p {
+    color: #ccc;
+    margin: 12px 0;
+}
+
+/* CONTATO */
+
+#contato form {
+    max-width: 600px;
+}
+
+#contato label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #252525;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#resposta {
+    color: #64d98b;
+    margin-top: 15px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #080808;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #c91e26;
+}
+
+footer h2 {
+    color: #e3262e;
+}
+
+footer p {
+    color: #aaa;
+    margin: 8px;
+}
+
+/* TEMA CLARO */
+
+body.claro {
+    background: #eee;
+    color: #222;
+}
+
+body.claro header,
+body.claro footer {
+    background: white;
+}
+
+body.claro section {
+    background: white;
+    border-color: #ddd;
+}
+
+body.claro section h2,
+body.claro #sobre p,
+body.claro #contato label {
+    color: #222;
+}
+
+body.claro #veiculos article {
+    background: #f5f5f5;
+    border-color: #ddd;
+}
+
+body.claro #veiculos article p {
+    color: #444;
+}
+
+body.claro footer p,
+body.claro nav a {
+    color: #333;
+}
+
+body.claro input,
+body.claro textarea {
+    background: white;
+    color: #222;
+    border-color: #ccc;
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #veiculos article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #inicio h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carros esportivos - Concessionária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+    <header>
+        <h1>Carros esportivos</h1>
+
+        <nav>
+            <a href="#inicio">Início</a> |
+            <a href="#veiculos">Veículos</a> |
+            <a href="#sobre">Sobre nós</a> |
+            <a href="#contato">Contato</a> |
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Conhaça mais detalhes!</h2>
+
+            <p>
+                Qualidade, conforto e tecnologia!
+            </p>
+
+            <img
+                src="WALLPAPER VEHICLE.jpg"
+                alt="Carro esportivo"
+                width="500"
+            >
+
+            <p>
+                <a href="#veiculos">Conheça os veículos ↓</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="veiculos">
+            <h2>Veículos</h2>
+
+            <article>
+                <h3>Lamborghini Countach LP 500 S</h3>
+
+                <img
+                    src="lam.countach LP 500.jpg"
+                    alt="Lamborghini Countach LP 500 S"
+                    width="300"
+                >
+
+                <p>Mais famoso dos anos 80!</p>
+                <p> Motor 4.8L V12
+                    Potência: 375 cv.</p>
+                <strong>Preço: R$ 4 a 5,5 milhões</strong></p>
+
+                <button class="interesse" data-carro="Lamborghini Countach LP 500 S">
+                    Tenho interesse
+                </button>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>McLaren Senna GTR</h3>
+
+                <img
+                    src="mclaren senna gtr.jpg"
+                    alt="McLaren Senna GTR"
+                    width="300"
+                >
+
+                <p>Hiperperformance e design aerodinâmico.</p>
+                <p>Motor 4.0L V8
+                    Potência: 800 cv.</p>
+                <p><strong>Preço: R$ 11 a 13 milhões</strong></p>
+
+                <button class="interesse" data-carro="McLaren Senna GTR">
+                    Tenho interesse
+                </button>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="sobre">
+            <h2>Sobre a escolha desses veículos</h2>
+
+            <p>
+                Ambos veículos foram escolhidos por serem ícones de design e performance, representando o auge da engenharia automotiva.
+            </p>
+
+            <p>
+                O objetivo era aprrsentar e detalhar esses veículos icônicos.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="contato">
+            <h2>📞 Entre em contato</h2>
+
+            <form id="formContato">
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" required>
+
+                <br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" required>
+
+                <br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" rows="5" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="resposta"></p>
+
+            </form>
+        </section>
+
+       
+
+    <footer>
+        <h2>Carros esportivos</h2>
+
+        <p>Projeto educativo de HTML e JavaScript.</p>
+        <button id="tema">🌙 Alterar tema</button> <button id="voltarTopo">⬆ Voltar ao topo</button>
+
+        <p>© 2026 projetado por Jamile Reis.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
